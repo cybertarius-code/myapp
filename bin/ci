@@ -1,6 +1,7 @@
-#!/usr/bin/env ruby
-require_relative "../config/boot"
-require "active_support/continuous_integration"
-
-CI = ActiveSupport::ContinuousIntegration
-require_relative "../config/ci.rb"
+#!/usr/bin/env bash
+set -e
+bin/rails test
+bin/rails test:system
+bundle exec standardrb
+bundle exec brakeman -q -o tmp/brakeman.html
+bundle exec bundle-audit check --update

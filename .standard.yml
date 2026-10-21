@@ -1,0 +1,15 @@
+fix: false
+parallel: true
+format: progress
+ruby_version: 3.4.7
+default_ignores: false
+ignore:
+  - 'node_modules/**/*'
+  - 'db/migrate/**/*'
+  - 'db/schema.rb'
+  - 'bin/**/*'
+  - 'Gemfile'
+  - 'config/environments/**/*'
+  - 'config/application.rb'
+  - 'config/boot.rb'
+  - 'config/puma.rb'

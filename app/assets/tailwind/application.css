@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  --color-skin-base: rgb(15 23 42);
+  --color-skin-accented: rgb(244 63 94);
+  --color-skin-accented-hover: rgb(190 18 60);
+  --color-skin-inverted: rgb(255 255 255);
+  --color-skin-muted: rgb(55 65 81);
+  --color-skin-dimmed: rgb(75 85 99);
+  --color-skin-error: rgb(220 38 38);
+  --color-skin-error-hover: rgb(185 28 28);
+  --color-skin-alternate: rgb(249 115 22);
+  --color-skin-border-base: rgb(209 213 219);
+  --color-skin-border-accented: rgb(244 63 94);
+}
+
+@layer base {
+  body { @apply font-sans antialiased; }
+}

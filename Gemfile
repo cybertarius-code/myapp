@@ -51,7 +51,6 @@ group :development, :test do
   gem "brakeman", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
-  gem "rubocop-rails-omakase", require: false
 end
 
 group :development do
@@ -64,3 +63,15 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "action_policy", "~> 0.7.7"
+gem "lograge", "~> 0.15.1"
+gem "meta-tags", "~> 2.24"
+gem "rails-i18n", "~> 8.1"
+gem "rack-attack", "~> 6.8"
+gem "mission_control-jobs", "~> 1.3"
+
+gem "letter_opener", "~> 1.10", group: :development
+gem "standard", "~> 1.35", group: :development
+
+gem "aws-sdk-s3", "~> 1.235", group: :production, require: false
