@@ -75,3 +75,5 @@ gem "letter_opener", "~> 1.10", group: :development
 gem "standard", "~> 1.35", group: :development
 
 gem "aws-sdk-s3", "~> 1.235", group: :production, require: false
+
+gem "csv_importer", "~> 0.1.0", github: "cybertarius-code/csv_importer", branch: "main"
