@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/cybertarius-code/csv_importer.git
-  revision: 9f0263d495fdecaed8df7e264cf150f8b689fbcc
+  revision: 29bfbfaaa439ef6b020bed3669a66674ade29906
   branch: main
   specs:
     csv_importer (0.1.0)

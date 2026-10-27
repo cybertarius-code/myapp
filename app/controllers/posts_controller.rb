@@ -21,12 +21,13 @@ class PostsController < ApplicationController
 
   # POST /posts
   def create
-    @post = Post.new(post_params)
+    result = ImportPostsService.call(params.require(:file), atomic: true)
 
-    if @post.save
-      redirect_to @post, notice: "Post was successfully created."
+    if result.success?
+      redirect_to posts_path, notice: "#{result.created} posts imported"
     else
-      render :new, status: :unprocessable_content
+      messages = result.errors.first(5).map { |e| "Row #{e[:line]}: #{e[:message]}" }
+      redirect_to posts_path, alert: messages.join("; ")
     end
   end
 
