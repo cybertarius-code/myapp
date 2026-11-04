@@ -74,4 +74,4 @@ gem "mission_control-jobs", "~> 1.3"
 gem "letter_opener", "~> 1.10", group: :development
 gem "standard", "~> 1.35", group: :development
 
-gem "aws-sdk-s3", "~> 1.235", group: :production, require: false
+gem "aws-sdk-s3", "~> 1.237", group: :production, require: false
