@@ -64,7 +64,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "action_policy", "~> 0.7.7"
+gem "action_policy", "~> 0.7.8"
 gem "lograge", "~> 0.15.1"
 gem "meta-tags", "~> 2.24"
 gem "rails-i18n", "~> 8.1"
